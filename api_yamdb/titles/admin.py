@@ -1,10 +1,9 @@
 from django.contrib import admin
-from import_export import resources
-from import_export import widgets
+from import_export import resources, widgets
 from import_export.admin import ImportExportModelAdmin
 from import_export.fields import Field
 
-from .models import Title, Genre, Category, GenreTitle
+from .models import Category, Genre, GenreTitle, Title
 
 
 class TitleResource(resources.ModelResource):

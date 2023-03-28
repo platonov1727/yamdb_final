@@ -1,17 +1,18 @@
 from django.contrib.auth.tokens import default_token_generator
-from django.shortcuts import get_object_or_404
 from django.core.mail import send_mail
+from django.shortcuts import get_object_or_404
 from rest_framework import filters, status, viewsets
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import AccessToken
 
-from .models import User
 from api_yamdb.settings import DEFAULT_FROM_EMAIL
-from .serializers import (TokenSerializer, UserSerializer,
-                          RegisterDataSerializer, AdminSerializer)
+
+from .models import User
 from .permissions import IsAdmin
+from .serializers import (AdminSerializer, RegisterDataSerializer,
+                          TokenSerializer, UserSerializer)
 
 
 class AdminAPI(viewsets.ModelViewSet):

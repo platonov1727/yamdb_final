@@ -1,10 +1,9 @@
 from django.contrib import admin
-from import_export import resources
+from import_export import resources, widgets
 from import_export.admin import ImportExportModelAdmin
 from import_export.fields import Field
-from import_export import widgets
+from reviews.models import Comment, Review
 
-from reviews.models import Review, Comment
 from .models import Title
 
 
