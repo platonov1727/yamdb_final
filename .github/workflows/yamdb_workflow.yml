@@ -1,4 +1,4 @@
-name: ApiYamdb Django workfloww
+name: ApiYamdb Django workflow
 
 on:
   push:
