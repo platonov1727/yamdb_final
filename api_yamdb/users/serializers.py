@@ -23,7 +23,7 @@ class RegisterDataSerializer(serializers.Serializer):
 
     def validate(self, data):
         """Запрещает пользователям присваивать себе имя me
-        и использовать повторные username и email."""
+        и использовать повторные username и и email."""
         if data.get('username') == 'me':
             raise serializers.ValidationError(
                 'Использоваться имя me запрещено')
