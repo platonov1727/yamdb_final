@@ -1,4 +1,4 @@
-name: ApiYamdb Django deployy
+name: API_yamdb deployy latest
 
 on:
   push:
