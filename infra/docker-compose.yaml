@@ -2,13 +2,13 @@ version: '3.8'
 
 services:
   db:
-    image: postgres:13.0-alpine
+    image: postgres:latest
     volumes:
       - /var/lib/postgresql/data/
     env_file:
       - ./.env
   web:
-    build: api_yamdb
+    image: platonov1727/api_yamdb:latest
     restart: always
     volumes:
       - static_value:/app/static/
