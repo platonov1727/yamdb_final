@@ -62,6 +62,6 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
-          sudo docker pull platonov1727/actions
+          sudo docker pull platonov1727/yamdb_final
           sudo docker stop $(sudo docker ps -a -q)
-          sudo docker run --rm -d -p 5000:5000 platonov1727/actions
+          sudo docker run --rm -d -p 5000:5000 platonov1727/yamdb_final
