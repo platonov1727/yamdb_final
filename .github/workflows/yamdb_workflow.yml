@@ -1,4 +1,4 @@
-name: ApiYamdb Django deploy
+name: ApiYamdb Django deployy
 
 on:
   push:
