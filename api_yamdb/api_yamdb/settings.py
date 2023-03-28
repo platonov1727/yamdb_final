@@ -14,7 +14,7 @@ ALLOWED_HOSTS = ['*']
 
 IMPORT_EXPORT_USE_TRANSACTIONS = True
 
-# Application definition sss
+# Application definition
 
 INSTALLED_APPS = [
     'titles.apps.TitlesConfig',
