@@ -1,3 +1,4 @@
+
 [![API_yamdb deployy latest](https://github.com/platonov1727/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)](https://github.com/platonov1727/yamdb_final/actions/workflows/yamdb_workflow.yml)
 
 # Yamdb_final
@@ -108,5 +109,8 @@ https://github.com/mariarozhina - Рожина Мария
 yamdb_final
 
 d
+<<<<<<< HEAD
 
 > > > > > > > parent of 874a7fb (Depp)
+=======
+>>>>>>> parent of 874a7fb (Depp)
