@@ -1,4 +1,3 @@
-
 [![API_yamdb deployy latest](https://github.com/platonov1727/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)](https://github.com/platonov1727/yamdb_final/actions/workflows/yamdb_workflow.yml)
 
 # Yamdb_final
@@ -62,15 +61,6 @@ touch .env
 ```
 
 - Добавьте в него переменные окружения для работы с базой данных:
-
-```markdown
-ENGINE ='django.db.backends.postgresql'
-DB_NAME=postgres # имя базы данных
-POSTGRES_USER=postgres # логин для подключения к базе данных
-POSTGRES_PASSWORD=postgres # пароль для подключения к БД (установите свой)
-DB_HOST=db # название сервиса (контейнера)
-DB_PORT=5432 # порт для подключения к БД 
-```
 
 - Запустите docker-compose командой
 
