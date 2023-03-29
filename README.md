@@ -8,11 +8,11 @@
 
 Сервис Апи для того, чтобы собирать пользовательские оценки и комментарии на произведения различных категорий и жанров.
 
-#### Подробная документация по адресу YOURHOST/redoc/
+## Подробная документация по адресу YOURHOST/redoc/
 
 В redoc описанны все ендпоинты и их возможности с примерами запросов. И ожидаемые ответы.
 
-#### Возможности
+## Возможности
 
 - JWT Аутентификация
 - возможность ознакомиться с отзывами без аутентификации(но нельзя оставить отзыв и поставить оценку)
@@ -20,7 +20,7 @@
 - Пользователи могут самостоятельно зарегистрироваться через идентификацию по email
 - Есть возможность назначить администратора, модератора
 
-#### Технологии
+## Технологии
 
 - Django==3.2
 - django-filter==22.1
@@ -33,9 +33,9 @@
 
 ## Инструкции по развертыванию проекта в dev режиме
 
-#### Запуск проекта в dev-режиме
+## Запуск проекта в dev-режиме
 
-```
+``` code
 git clone <название репозитория>
 python -m venv venv
 source venv/bin/activate
@@ -47,18 +47,22 @@ python manage.py runserver
 
 ## Инструкции по развертыванию проекта в docker
 
-* Установите Docker, используя инструкции с официального сайта.
-* Склонируйте репозиторий на локальную машину
+- Установите Docker, используя инструкции с официального сайта.
+- Склонируйте репозиторий на локальную машину
 
-`git clone git@github.com:platonov1727/yamdb_final.git`
-
-* Создайте файл .env командой
-
-`touch .env`
-
-* Добавьте в него переменные окружения для работы с базой данных:
-
+```code
+git clone git@github.com:platonov1727/yamdb_final.git
 ```
+
+- Создайте файл .env командой
+
+``` code
+touch .env
+```
+
+- Добавьте в него переменные окружения для работы с базой данных:
+
+```python
 ENGINE ='django.db.backends.postgresql'
 DB_NAME=postgres # имя базы данных
 POSTGRES_USER=postgres # логин для подключения к базе данных
@@ -67,30 +71,34 @@ DB_HOST=db # название сервиса (контейнера)
 DB_PORT=5432 # порт для подключения к БД 
 ```
 
-* Запустите docker-compose командой
+- Запустите docker-compose командой
 
-```
+``` code
 sudo docker-compose up -d
 ```
 
-* Выполните миграции
+- Выполните миграции
 
-```sudo docker-compose exec yamdb python manage.py migrate```
-
-* Соберите статику командой
-
-```sudo docker-compose exec yamdb python manage.py collectstatic --no-input```
-
-* Создайте суперпользователя Django
-
-```sudo docker-compose exec yamdb python manage.py createsuperuser --username admin --email 'admin@yamdb.com'
+```code
+sudo docker-compose exec yamdb python manage.py migrate
 ```
 
+- Соберите статику командой
+
+```code
+sudo docker-compose exec yamdb python manage.py collectstatic --no-input
 ```
+
+- Создайте суперпользователя Django
+
+```code
+sudo docker-compose exec yamdb python manage.py createsuperuser --username admin --email 'admin@yamdb.com'
+```
+
 # Авторы
 
-https://github.com/Shabanov010
-https://github.com/platonov1727
-https://github.com/mariarozhina
-```
+https://github.com/Shabanov010 - Шабанов Дмитрий
 
+https://github.com/platonov1727 - Платонов Сергей
+
+https://github.com/mariarozhina - Рожина Мария
