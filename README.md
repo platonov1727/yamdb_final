@@ -35,7 +35,7 @@
 
 #### Запуск проекта в dev-режиме
 
-```ini
+```
 git clone <название репозитория>
 python -m venv venv
 source venv/bin/activate
@@ -50,11 +50,11 @@ python manage.py runserver
 * Установите Docker, используя инструкции с официального сайта.
 * Склонируйте репозиторий на локальную машину
 
-```git clone git@github.com:platonov1727/yamdb_final.git```
+`git clone git@github.com:platonov1727/yamdb_final.git`
 
 * Создайте файл .env командой
 
-```touch .env```
+`touch .env`
 
 * Добавьте в него переменные окружения для работы с базой данных:
 
@@ -69,33 +69,28 @@ DB_PORT=5432 # порт для подключения к БД
 
 * Запустите docker-compose командой
 
-```sh
+```
 sudo docker-compose up -d
 ```
 
 * Выполните миграции
 
-```sh
-sudo docker-compose exec yamdb python manage.py migrate
-```
+```sudo docker-compose exec yamdb python manage.py migrate```
 
 * Соберите статику командой
 
-```sh
-sudo docker-compose exec yamdb python manage.py collectstatic --no-input
-```
+```sudo docker-compose exec yamdb python manage.py collectstatic --no-input```
 
 * Создайте суперпользователя Django
 
-```sh
-sudo docker-compose exec yamdb python manage.py createsuperuser --username admin --email 'admin@yamdb.com'
-
+```sudo docker-compose exec yamdb python manage.py createsuperuser --username admin --email 'admin@yamdb.com'
 ```
 
-```ini
+```
 # Авторы
 
 https://github.com/Shabanov010
 https://github.com/platonov1727
 https://github.com/mariarozhina
 ```
+
