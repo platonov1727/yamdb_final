@@ -103,14 +103,3 @@ https://github.com/Shabanov010 - Шабанов Дмитрий
 https://github.com/platonov1727 - Платонов Сергей
 
 https://github.com/mariarozhina - Рожина Мария
-
-# yamdb_final
-
-yamdb_final
-
-d
-<<<<<<< HEAD
-
-> > > > > > > parent of 874a7fb (Depp)
-=======
->>>>>>> parent of 874a7fb (Depp)
