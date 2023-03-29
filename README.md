@@ -35,7 +35,7 @@
 
 ## Запуск проекта в dev-режиме
 
-``` code
+```code
 git clone <название репозитория>
 python -m venv venv
 source venv/bin/activate
@@ -56,7 +56,7 @@ git clone git@github.com:platonov1727/yamdb_final.git
 
 - Создайте файл .env командой
 
-``` code
+```code
 touch .env
 ```
 
@@ -73,7 +73,7 @@ DB_PORT=5432 # порт для подключения к БД
 
 - Запустите docker-compose командой
 
-``` code
+```code
 sudo docker-compose up -d
 ```
 
@@ -102,3 +102,11 @@ https://github.com/Shabanov010 - Шабанов Дмитрий
 https://github.com/platonov1727 - Платонов Сергей
 
 https://github.com/mariarozhina - Рожина Мария
+
+# yamdb_final
+
+yamdb_final
+
+d
+
+> > > > > > > parent of 874a7fb (Depp)
