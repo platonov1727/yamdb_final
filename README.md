@@ -63,7 +63,7 @@ touch .env
 
 - Добавьте в него переменные окружения для работы с базой данных:
 
-```python
+```markdown
 ENGINE ='django.db.backends.postgresql'
 DB_NAME=postgres # имя базы данных
 POSTGRES_USER=postgres # логин для подключения к базе данных
