@@ -1,6 +1,10 @@
 name: API_yamdb deployy latest
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
+      - main
 
 jobs:
   tests:
