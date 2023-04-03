@@ -61,7 +61,6 @@ touch .env
 ```
 
 - Добавьте в него переменные окружения для работы с базой данных:
-
 - Запустите docker-compose командой
 
 ```code
@@ -93,3 +92,5 @@ https://github.com/Shabanov010 - Шабанов Дмитрий
 https://github.com/platonov1727 - Платонов Сергей
 
 https://github.com/mariarozhina - Рожина Мария
+
+some important fixes
