@@ -4,11 +4,11 @@ services:
   db:
     image: postgres:latest
     volumes:
-      - db:/var/lib/postgresql/data/
+      - /var/lib/postgresql/data/
     env_file:
       - ./.env
   web:
-    image: platonov1727/api_yamdb:latest
+    image: platonov1727/api_yamdb:v.2.1
     restart: always
     volumes:
       - static_value:/app/static/
@@ -34,4 +34,3 @@ services:
 volumes:
   static_value:
   media_value:
-  db:
