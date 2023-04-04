@@ -3,7 +3,6 @@ FROM python:3.7-slim
 WORKDIR /app
 
 COPY requirements.txt .
-COPY ./.github/workflows/yamdb_workflow.yml .
 
 RUN python -m pip install --upgrade pip
 
