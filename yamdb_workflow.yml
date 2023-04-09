@@ -59,6 +59,7 @@ jobs:
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
           sudo docker-compose stop
+          sudo docker-compose stop nginx
           sudo docker-compose rm web
           sudo docker-compose rm nginx
           touch .env
