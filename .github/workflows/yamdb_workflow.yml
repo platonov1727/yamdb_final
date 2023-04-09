@@ -58,8 +58,8 @@ jobs:
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
           sudo docker-compose stop
-          sudo echo y | docker-compose rm web
-          sudo echo y | docker-compose rm nginx
+          sudo docker-compose rm web
+          sudo docker-compose rm nginx
           touch .env
           echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
           echo DB_NAME=${{ secrets.DB_NAME }} >> .env
