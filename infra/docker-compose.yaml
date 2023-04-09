@@ -4,7 +4,7 @@ services:
   db:
     image: postgres:latest
     volumes:
-      - db:/var/lib/postgresql/data/
+      - /var/lib/postgresql/data/
     env_file:
       - ./.env
   web:
@@ -34,4 +34,3 @@ services:
 volumes:
   static_value:
   media_value:
-  db:
