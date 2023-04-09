@@ -1,4 +1,4 @@
-name: API_yamdb deployy latest
+name: API_yamdb deployy latestss
 
 on: [push]
 jobs:
