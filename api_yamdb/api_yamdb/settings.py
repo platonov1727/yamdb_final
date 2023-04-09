@@ -114,7 +114,6 @@ USE_TZ = True
 # STATIC_ROOT = (BASE_DIR / 'static/')
 
 STATIC_URL = '/static/'
-# STATICFILES_DIRS необходимо закомментировать или удалить
 # STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static/'),)
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
@@ -125,7 +124,7 @@ AUTH_USER_MODEL = 'users.User'
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated',
+        'rest_framework.permissions.AllowAny',
     ],
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework_simplejwt.authentication.JWTAuthentication',
