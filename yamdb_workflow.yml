@@ -1,8 +1,6 @@
 name: API_yamdb deployy latest
 
-on:
-  push:
-    branches: [ main, master ]
+on: [push]
 jobs:
   tests:
     runs-on: ubuntu-latest
